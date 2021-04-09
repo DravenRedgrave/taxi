@@ -1,0 +1,596 @@
+html,body{
+  margin: 0px;
+  padding: 0px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+  width: 100%;
+  height: 75vh;
+  background-image: url("../img/header_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+}
+
+.head{
+  max-width: 1500px;
+  padding: 0px 20px;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding-top: 20px;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.logo span{
+  color: #ffc61a;
+}
+
+.logo p{
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+}
+
+
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a{
+  margin-right: 20px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-transform: uppercase;
+}
+
+.main{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+}
+
+.content-main{
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.content-main h1{
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px;
+}
+
+.content-main p{
+  font-size: 20px;
+  letter-spacing: 14px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.content-main span{
+  letter-spacing: 5px;
+  font-size: 36px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.img-box {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%,100%);
+}
+
+.menu-toogle{
+  display: none;
+}
+
+@media (max-width:960px) {
+  .img-box img{
+    max-width: 100%;
+  }
+  .img-box{
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%,0%);
+  }
+  .main{
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,10%);
+  }
+  .menu-toogle{
+    display: block;
+    color: #fff;
+    font-size: 25px;
+  }
+  nav{
+    display: none;
+  }
+}
+
+@media (max-width:480px){
+  .img-box img{
+    max-width: 100%;
+  }
+}
+
+.about{
+  width: 100%;
+  height: 82vh;
+  background-color: #ffc61a;
+}
+
+.about-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 13%;
+}
+
+.about-flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-item {
+  max-width: 570px;
+}
+
+.about-item h2{
+  font-size: 35px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.about-item  h3{
+  font-size: 50px;
+  color: #101010;
+  font-weight: 900;
+  font-family: "Lato";
+  margin-top: 20px;
+}
+
+.about-item p{
+  font-size: 18px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+
+.btn-about{
+  padding-top: 50px;
+}
+
+.btn-about a{
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  text-align: center;
+  border-radius: 7px;
+  background-color: #000000;
+  padding: 10px 20px;
+}
+
+.about-form{
+  max-width: 422px;
+  background-color: #fff;
+}
+
+.form-head{
+
+}
+
+.form-head h4{
+  display: flex;
+  align-items:center;
+  padding: 0px 0px 0px 40px;
+  max-width: 422px;
+  min-height: 77px;
+  font-size: 34px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: left;
+  background-color: #171717;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.form-head span{
+  color: #ffc61a;
+  margin-left: 10px;
+}
+
+.form-content{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-content input{
+  margin: 10px 20px;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+  border-radius: 0;
+  padding: 20px 0;
+}
+
+.btn-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.btn-form a{
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  text-align: center;
+  border-radius: 7px;
+  background-color: #131313;
+  padding: 10px 120px
+}
+
+
+@media (max-width:1200px) {
+  .about{
+    height: auto;
+  }
+  .about-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-item{
+    padding-top: 10%;
+  }
+  .about-item h2{
+    text-align: center;
+  }
+  .btn-about{
+    margin-bottom: 30px;
+  }
+  .about-form{
+    margin-bottom: 30px;
+  }
+}
+
+.tarif{
+  width: 100%;
+  height: 75vh;
+}
+
+.tarif-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarif-container h2{
+  font-size: 44px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tarif-container span{
+  font-size: 35px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tarif-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarif-item{
+  background-color: #f5f4f2;
+  max-width: 350px;
+  padding: 10px 20px;
+  position: relative;
+  margin-top: 7%;
+  margin-left: 30px;
+}
+
+.tarif-item:hover {
+  background-color: #ffc61a;
+}
+
+.tarif-item h3{
+  font-size: 30px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tarif-item p {
+  font-size: 18px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.tarif-item h4{
+  font-size: 44px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.tarif-img-box{
+  position: absolute;
+  top: -20%;
+}
+
+.tarif-box{
+  padding-top: 20%;
+  margin-bottom: 30px;
+}
+
+.tarif-btn{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tarif-btn a{
+  border-radius: 7px;
+  background-color: #ffc61a;
+  font-size: 30px;
+  color: #000;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  text-align: center;
+  padding: 10px 30px;
+}
+
+@media (max-width:1200px) {
+  .tarif{
+  height: auto;
+  }
+  .tarif-flex{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+  .tarif-item{
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+}
+
+.best{
+  width: 100%;
+  height: 75vh;
+  background-image: url("../img/reason_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.best-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.best-container h2{
+  font-size: 35px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px;
+}
+
+.best-container h3{
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px;
+}
+
+.best-flex{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+
+.best-item{
+  display:flex;
+  align-items: center;
+  max-width: 500px;
+}
+
+.best-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 81px;
+  height: 81px;
+  border-radius: 41px;
+  background-color: #ffc61a;
+  margin-right: 50px;
+}
+
+.best-circle i {
+  font-size: 30px;
+  color: #161616;
+  text-align: center;
+}
+
+.best-item h4{
+  font-size: 25px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+}
+
+.best-item p {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+.best-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.best-btn a{
+  font-size: 30px;
+  color: #010101;
+  font-weight: 700;
+  font-family: "Bebas Neue";
+  text-align: center;
+  border-radius: 7px;
+  background-color: #ffc61a;
+  padding: 10px 20px;
+}
+
+@media (max-width:1200px) {
+  .best{
+    height: auto;
+  }
+  .best-flex{
+    justify-content: center;
+  }
+}
+
+.download{
+  width: 100%;
+  height: 60vh;
+}
+
+.download-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.download-container h2{
+  font-size: 35px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.download-container h3{
+  font-size: 44px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.download-flex{
+  display: flex;
+  justify-content: space-around;
+}
+
+.download-item {
+  max-width: 470px;
+  padding-top: 5%;
+}
+
+.download-item h4{
+  font-size: 25px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Lato";
+}
+
+.download-item p{
+  font-size: 18px;
+  color: #101010;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+
+.download-box{
+  display: flex;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeueRegular.woff2");
+}
