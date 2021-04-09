@@ -527,7 +527,7 @@ nav ul li a{
 
 .download{
   width: 100%;
-  height: 60vh;
+  height: 64vh;
 }
 
 .download-container{
@@ -559,6 +559,7 @@ nav ul li a{
 .download-flex{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .download-item {
@@ -583,6 +584,122 @@ nav ul li a{
 
 .download-box{
   display: flex;
+}
+
+@media (max-width:1200px) {
+  .download-flex{
+  }
+}
+
+@media (max-width:500px){
+  .download-img img{
+    max-width: 100%
+  }
+}
+
+.clients{
+  width: 100%;
+  height: 60vh;
+  background-image: url("../img/testimonials.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.clients-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2%;
+}
+
+.clients-container h2{
+  font-size: 35px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px
+}
+
+.clients-container h3{
+  font-size: 44px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px
+}
+
+.clients-flex{
+  display: flex;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.clients-item{
+  padding: 10px 30px;
+  border-radius: 50px;
+  background-color: #040707;
+  margin-right: 10px;
+}
+
+.clients-item p{
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+.client-box{
+  display: flex;
+  margin: 30px 0px;
+}
+
+
+.client-text h4{
+  font-size: 25px;
+  color: #ffc61a;
+  font-weight: 900;
+  font-family: "Lato";
+  margin: 10px;
+}
+
+.client-text  h5{
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Lato";
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.ready{
+  width: 100%;
+  height: 30vh;
+  background-color: #ffc61a;
+}
+
+.raady-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3%;
+}
+
+.raady-container h2{
+  font-size: 35px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px;
+}
+
+.raady-container h3{
+  font-size: 77px;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Lato";
+  text-align: center;
+  margin: 0px;
 }
 
 @font-face {
